@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios</title>
+</head>
+<body>
+  <h1>Formularios</h1>
+  <p>Permiten que los usuarios ingresar y enviar datos a un servidor para ser procesados.</p>
+  <p>Es una de las partes mas imortantes de los sitios web,por su interactividad y apoyo a cumplir los objetivos del sitio.</p>
+
+  <!--
+  Estructura basica
+  
+  <form> -> Encapsula todos los campos de entrada y controles que usuarios pueden utilizar para enviar los datos.
+
+
+    <imput> -> Crea campos de entradas en los formularios.Hay de varios tipos y se especifica con el atributo type=tipoinput
+      son selfclosing o autocierre
+
+    <label> -> Asocia una etiqueta de texto con un campo de entrada.Mejora la accesibilidad y permite hacer click en el texto y que el campo asociado obtenga el foco.
+  -->
+      <form>
+
+<label for="Nombre">Nombre</label>
+<input type="text" id="Nombre">
+      </form>
+  
+
+
+      <!--Tipos de inputs
+      
+      Se especifican en el atributo type="tipoInput"
+      
+      -->
+
+      <form action="">
+<label for="">Tipo texto</label>
+     <input type="text">
+
+      </form>
+
+
+      <form>
+
+
+        <label for="">tipo email</label>
+      <input type="Email">
+
+      </form>
+
+
+      <form>
+
+
+         <label for="">tipo contraseña</label>
+         <input type="password">
+      </form>
+
+
+      <form action="">
+
+<label for="">tipo casilla de verificacion</label>
+<input type="checkbox">
+
+      </form>
+
+
+
+      <form action="">
+
+<label for="">tipo boton de envio</label>
+<input type="submit">
+
+      </form>
+
+
+
+
+      <form action="">
+
+
+<label for="">Tipo boton de opcion</label>
+<input type="radio">
+      </form>
+
+
+      <form action="">
+
+<label for="">tipo color</label>
+<input type="color">
+
+
+      </form>
+
+
+      <form action="">
+
+
+<label for="">tipo fecha</label>
+<input type="date">
+
+      </form>
+
+
+      <form action="">
+
+
+<label for="">tipo archivo</label>
+<input type="file">
+
+
+<!--
+
+
+Elemento <select> Define un menu desplegable con opcones que el usario puede elegir
+-->
+
+      </form>
+
+
+
+      <form action="">
+
+
+<label for="">Elemento de seleccion</label>
+<select>
+<option value="">Arroz</option>
+<option value="">Mole</option>
+<option value="">Licuado</option>
+
+</select>
+      </form>
+
+
+
+      <!-- 
+      
+      Elemento <textarea> ->  Crea un campo de entrada de texto multilinea. Se usa para comentarios o descripciones larga
+
+
+        Atributos:
+
+        rows="numerosFilas"
+        Cols="numeroColumnas"
+      -->
+
+
+      <form action="">
+
+<label for="">Area de texto</label>
+<textarea rows="10"   cols="30" >aqui va un txt C:</textarea>
+
+
+      </form>
+</body>
+</html>
