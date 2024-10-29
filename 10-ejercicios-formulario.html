@@ -37,7 +37,7 @@ placeholder="correoemail@mail.com" required />
 <br>
 
 <label for="Mensaje">Mensaje</label>
-<textarea name="" id="Mensaje"></textarea><br>
+<textarea name="" id="escribeMensaje"></textarea><br>
 
 <button type="submit">Enviar👻</button>
 
@@ -49,11 +49,35 @@ placeholder="correoemail@mail.com" required />
 
     -->
 
-    <div id="Mensaje" style="display:none ;">
+    <div id="confirmacionMensaje" style="display:none ;">
       <p>Gracias por enviar tus datos te vamos a doxear</p>
     </div>
     <!--Codigo para que funcione el formulario-->
-    <script></script>
+    <script>
+
+
+//obtener el formulario y el mensaje de confirmacion
+
+const miformulario = document.getElementById("formulario");
+
+const mensajeConfirmacion = document.getElementById("confirmacionMensaje")
+
+//escuchador o listener para el evento o event  del buton submit
+
+miformulario.addEventListener( "submit" , function(event){
+  //codigo que se va a ejecutar cuando el usuario le pique al submit
+  //alert("haz dado click en el boton enviar")
+
+   event.preventDefault(); //evita que el formulario recargue la pagina
+
+   miformulario.style.display = "none";
+
+   //mostramos el elemento div con el mensaje de confirmacion
+   mensajeConfirmacion.style.display = "block"
+
+} )
+
+    </script>
 
   </section>
 </body>
